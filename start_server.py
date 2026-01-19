@@ -26,7 +26,7 @@ image = Image().add_python_packages([
 
 streamlit_server = Pod(
     image=image,
-    ports=[8501],  # Default port for streamlit
+    ports=[8501],  # Default port
     gpu="T4",
     memory="2Gi",
     entrypoint=["streamlit", "run", "app.py"],
